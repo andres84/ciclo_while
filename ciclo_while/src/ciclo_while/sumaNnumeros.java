@@ -19,17 +19,18 @@ public static void main(String... andres){
     System.out.println("Digite hasta que numero positivo se va a realizar la suma");
     int numero = sc.nextInt();
     
-    int cont = 0;
-    int suma = 1;
+    int cont = 1;
+    int suma = 0;
     
-    while(suma <= numero){
+    while(cont <= numero){
         
-        cont = cont + suma;
-        suma = suma + 1;
+        suma = suma + cont;
+        cont = cont + 1;
+        
         
     }
     
-    System.out.println("La suma de 0 hasta " + numero + " es " + cont);
+    System.out.println("La suma de 0 hasta " + numero + " es " + suma);
     
     
 }
